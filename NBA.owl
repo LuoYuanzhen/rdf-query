@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:NBA#"
+     xml:base="urn:absolute:NBA"
+     xmlns:NBA="urn:absolute:NBA#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="urn:absolute:NBA"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:NBA#belongTo -->
+
+    <owl:ObjectProperty rdf:about="urn:absolute:NBA#belongTo">
+        <rdfs:domain rdf:resource="urn:absolute:NBA#player"/>
+        <rdfs:range rdf:resource="urn:absolute:NBA#team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:NBA#age -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:NBA#age">
+        <rdfs:domain rdf:resource="urn:absolute:NBA#player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:NBA#name -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:NBA#name">
+        <rdfs:domain rdf:resource="urn:absolute:NBA#player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:NBA#teamLocation -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:NBA#teamLocation">
+        <rdfs:domain rdf:resource="urn:absolute:NBA#team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:absolute:NBA#teamName -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:NBA#teamName">
+        <rdfs:domain rdf:resource="urn:absolute:NBA#team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:NBA#C -->
+
+    <owl:Class rdf:about="urn:absolute:NBA#C">
+        <rdfs:subClassOf rdf:resource="urn:absolute:NBA#player"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:NBA#PF -->
+
+    <owl:Class rdf:about="urn:absolute:NBA#PF">
+        <rdfs:subClassOf rdf:resource="urn:absolute:NBA#player"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:NBA#PG -->
+
+    <owl:Class rdf:about="urn:absolute:NBA#PG">
+        <rdfs:subClassOf rdf:resource="urn:absolute:NBA#player"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:NBA#SF -->
+
+    <owl:Class rdf:about="urn:absolute:NBA#SF">
+        <rdfs:subClassOf rdf:resource="urn:absolute:NBA#player"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:NBA#SG -->
+
+    <owl:Class rdf:about="urn:absolute:NBA#SG">
+        <rdfs:subClassOf rdf:resource="urn:absolute:NBA#player"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:NBA#eastTeam -->
+
+    <owl:Class rdf:about="urn:absolute:NBA#eastTeam">
+        <rdfs:subClassOf rdf:resource="urn:absolute:NBA#team"/>
+    </owl:Class>
+    
+
+
+    <!-- urn:absolute:NBA#player -->
+
+    <owl:Class rdf:about="urn:absolute:NBA#player"/>
+    
+
+
+    <!-- urn:absolute:NBA#team -->
+
+    <owl:Class rdf:about="urn:absolute:NBA#team"/>
+    
+
+
+    <!-- urn:absolute:NBA#westTeam -->
+
+    <owl:Class rdf:about="urn:absolute:NBA#westTeam">
+        <rdfs:subClassOf rdf:resource="urn:absolute:NBA#team"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:absolute:NBA#Anthony -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:NBA#Anthony">
+        <rdf:type rdf:resource="urn:absolute:NBA#PF"/>
+        <belongTo rdf:resource="urn:absolute:NBA#Lakers"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</age>
+        <name>Anthony Davis</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:NBA#Cavaliers -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:NBA#Cavaliers">
+        <rdf:type rdf:resource="urn:absolute:NBA#eastTeam"/>
+        <teamLocation>Cleveland</teamLocation>
+        <teamName>Cavaliers</teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:NBA#Kevin -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:NBA#Kevin">
+        <rdf:type rdf:resource="urn:absolute:NBA#C"/>
+        <belongTo rdf:resource="urn:absolute:NBA#Cavaliers"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</age>
+        <name>Kevin Love</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:NBA#Klay -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:NBA#Klay">
+        <rdf:type rdf:resource="urn:absolute:NBA#SG"/>
+        <belongTo rdf:resource="urn:absolute:NBA#Warriors"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</age>
+        <name>Klay Thompson</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:NBA#Lakers -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:NBA#Lakers">
+        <rdf:type rdf:resource="urn:absolute:NBA#westTeam"/>
+        <teamLocation>Los Angel</teamLocation>
+        <teamName>Lakers</teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:NBA#Lebron -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:NBA#Lebron">
+        <rdf:type rdf:resource="urn:absolute:NBA#SF"/>
+        <belongTo rdf:resource="urn:absolute:NBA#Lakers"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</age>
+        <name>Lebron James</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:NBA#Stephen -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:NBA#Stephen">
+        <rdf:type rdf:resource="urn:absolute:NBA#PG"/>
+        <belongTo rdf:resource="urn:absolute:NBA#Warriors"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</age>
+        <name>Stephen Curry</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:absolute:NBA#Warriors -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:NBA#Warriors">
+        <rdf:type rdf:resource="urn:absolute:NBA#westTeam"/>
+        <teamLocation>Golden State</teamLocation>
+        <teamName>Warriors</teamName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
