@@ -1,0 +1,46 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:uni="http://www.mydomain.org/uni-ns#"
+	xmlns:id="http://www.mydomain.org/id-ns#"
+	>
+	<rdf:Description rdf:about="id:949352">
+		<uni:name>Grigoris Antoniou</uni:name>
+		<uni:title>professor</uni:title>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="id:949318">
+		<uni:name>David Billington</uni:name>
+		<uni:title>associate professor</uni:title>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="id:949111">
+		<uni:name>Michael Maher</uni:name>
+		<uni:title>professor</uni:title>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="id:CIT1111">
+		<uni:courseName>discrete mathematics</uni:courseName>
+		<uni:isTaughtBy>David Billington</uni:isTaughtBy>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="id:CIT1112">
+		<uni:courseName>concrete mathematics</uni:courseName>
+		<uni:isTaughtBy>Grigoris Antoniou</uni:isTaughtBy>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="id:CIT2112">
+		<uni:courseName>programming</uni:courseName>
+		<uni:isTaughtBy>Michael Maher</uni:isTaughtBy>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="id:CIT3112">
+		<uni:courseName>computational theory</uni:courseName>
+		<uni:isTaughtBy>David Billington</uni:isTaughtBy>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="id:CIT3116">
+		<uni:courseName>knowledge representation</uni:courseName>
+		<uni:isTaughtBy>Grigoris Antoniou</uni:isTaughtBy>
+	</rdf:Description>
+
+</rdf:RDF>

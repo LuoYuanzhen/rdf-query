@@ -1,0 +1,85 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:uni="http://www.mydomain.org/uni-ns#"
+	>
+
+	<rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#team"/>
+
+	<rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#eastTeam">
+	    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#team"/>
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#westTeam">
+	    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#team"/>
+	</rdfs:Class>
+
+    <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#player"/>
+
+    <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PG">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#player"/>
+    </rdfs:Class>
+
+    <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#SG">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#player"/>
+    </rdfs:Class>
+
+    <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#SF">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#player"/>
+    </rdfs:Class>
+
+    <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PF">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#player"/>
+    </rdfs:Class>
+
+    <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#C">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#player"/>
+    </rdfs:Class>
+
+    <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#teamLocation">
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#teamName">
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#name">
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#age">
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Literal"/>
+    </rdf:Property>
+
+    <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#belongTo">
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#team"/>
+    </rdf:Property>
+
+    <rdf:Description rdf:about="http://www.mydomain.org/uni-ns#Lakers">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#westTeam"/>
+        <rdf:teamName>Lakers</rdf:teamName>
+        <rdf:teamLocation>Los Angel</rdf:teamLocation>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.mydomain.org/uni-ns#Lebron">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#SF"/>
+        <rdf:name>Lebron James</rdf:name>
+        <rdf:age>36</rdf:age>
+        <rdf:belongTo rdf:resource="http://www.mydomain.org/uni-ns#Lakers"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.mydomain.org/uni-ns#Lebron">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PF"/>
+        <rdf:name>Antony Davids</rdf:name>
+        <rdf:age>26</rdf:age>
+        <rdf:belongTo rdf:resource="http://www.mydomain.org/uni-ns#Lakers"/>
+    </rdf:Description>
+
+
+</rdf:RDF>
